@@ -10,11 +10,11 @@ function grid() {
         const note = notes[i];
 
         var row = document.createElement('div');
-        row.className = "row";
-        row.id = "row" + i;
+        row.className = "text-"+note.author;
+        row.id = "text" + i;
 
         var date = document.createElement('div');
-        date.innerHTML = note.date;
+        date.innerHTML = (new Date(Date.parse(note.date))).getDate();
         row.appendChild(date);
 
         var author = document.createElement('div');
