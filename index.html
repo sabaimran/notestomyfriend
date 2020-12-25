@@ -1,1 +1,32 @@
-<h>Hello, world</h>
+<html>
+  <head>
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <title>Notes to my Friend</title>
+  </head>
+  <body>
+    <h1>Ciao</h1>
+    <p>Today will be a beautiful day.</p>
+    <div class="grid-container">
+      <button id="routineButton">Routine</button>
+      <button id="dotButton">Semicolonial Times</button>
+      <button id="weightButton">Pounds</button>
+    </div>
+  </body>
+  <script>
+    var button = document.getElementById('routineButton');
+    button.onclick = function() {
+        location.assign('/routine');
+    }
+
+    var button = document.getElementById('dotButton');
+    button.onclick = function() {
+        location.assign('/menses');
+    }
+
+    var button = document.getElementById('weightButton');
+    button.onclick = function() {
+        location.assign('/weight');
+    }
+
+  </script>
+</html>

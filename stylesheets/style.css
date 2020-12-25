@@ -1,0 +1,12 @@
+h1,p { margin: 2vh; font-weight:600 }
+body { background-color: #f0f7f1; font-family: "Courier New", Courier, monospace; }
+button { border: none; background-color: #b0f2ac; font-family: "Courier New", Courier, monospace; font-size: 300%; cursor: pointer; }
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'button'
+            'button'
+            'button';
+    grid-gap: 30%;
+    padding: 2%;
+}
