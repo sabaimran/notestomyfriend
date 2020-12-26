@@ -46,5 +46,4 @@ function getNotesSortedByDateTime() {
     return notes.sort((a,b) => (Date.parse(a.date)) < (Date.parse(b.date)) ? 1 : -1);
 }
 
-// and you should use 
 document.getElementById('notes-container').appendChild(grid());

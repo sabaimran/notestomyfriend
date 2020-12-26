@@ -8,17 +8,45 @@ button { border: none; background-color: #b0f2ac; font-family: "Courier New", Co
     grid-template-rows: auto;
     gap: 3%;
 }
+  
+.container > *:nth-child(2n-1) {
+    justify-self: end;
+    text-align: left;
+}
+
+.container > *:nth-child(2n) {
+    justify-self: end;
+    text-align: left;
+}
+
+.container > *:nth-child(2n-1):nth-last-of-type(1) {
+    border-color: rgb(96, 109, 182);
+    grid-column: span 2;
+}
+
+.text-saba:hover {
+    background-color: rgb(132, 144, 216);
+    transition: 2s;
+}
+
+.text-q:hover {
+    background-color: rgb(238, 203, 107);
+    transition: 2s;
+}
 
 #notes-container {
-    margin: 5% 20% 5% 20%;
+    margin: 0% 15% 5% 15%;
+    padding: 40px 0px;
 }
 
 .text-saba {
     background-color: #b0f2ac;
+    transition: background-color 2s;
 }
 
 .text-q {
     background-color: #ce93e0;
+    transition: background-color 2s;
 }
 
 .text-row {
