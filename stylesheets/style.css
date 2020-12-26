@@ -1,11 +1,16 @@
-h1,p { margin: 2vh; font-weight:600 }
-body { background-color: #414141; font-family: "Courier New", Courier, monospace; }
+h1,p { margin: 2vh; font-weight:800 }
+body { background-color: #e5f1f8; font-family: "Courier New", Courier, monospace; font-weight: 600;}
 button { border: none; background-color: #b0f2ac; font-family: "Courier New", Courier, monospace; font-size: 300%; cursor: pointer; }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+    grid-template-rows: auto;
     gap: 3%;
+}
+
+#notes-container {
+    margin: 5% 20% 5% 20%;
 }
 
 .text-saba {
@@ -23,4 +28,9 @@ button { border: none; background-color: #b0f2ac; font-family: "Courier New", Co
 
 .text-date {
     font-size: small;
+    font-weight: 400;
+}
+
+pre {
+    white-space: pre-wrap;
 }
