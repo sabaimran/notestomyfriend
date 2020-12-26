@@ -1,12 +1,26 @@
 h1,p { margin: 2vh; font-weight:600 }
-body { background-color: #f0f7f1; font-family: "Courier New", Courier, monospace; }
+body { background-color: #414141; font-family: "Courier New", Courier, monospace; }
 button { border: none; background-color: #b0f2ac; font-family: "Courier New", Courier, monospace; font-size: 300%; cursor: pointer; }
-.grid-container {
+
+.container {
     display: grid;
-    grid-template-areas:
-        'button'
-            'button'
-            'button';
-    grid-gap: 30%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+}
+
+.text-saba {
+    background-color: #b0f2ac;
+}
+
+.text-q {
+    background-color: #ce93e0;
+}
+
+.text-row {
+    border-radius: 10px;
     padding: 2%;
+}
+
+.text-date {
+    font-size: small;
 }
