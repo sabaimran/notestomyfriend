@@ -14,5 +14,15 @@ const notes =
             author: "saba",
             date: "2020-11-15T00:00:00",
             text: "this tent (on AirBnb) is over 1k per month, which is cheaper than our Urbana rent, think about that"
+        },
+        { 
+            author: "q",
+            date: "2020-11-16T00:00:00",
+            text: "She. Anchors on the good in people.\nIt overshadows everything she sees in a person.\nAnd she feels let down when the other parts of the person may prove incongruence to the good she holds dear as her identity"
+        },
+        { 
+            author: "q",
+            date: "2020-11-01T00:00:00",
+            text: "And lastly lasty (prob not ultimately), people work hard. And this I'm incredibly thankful for. Friday evening when I had a [redacted] and a few friends over, I asked about his week and he said cheerfully and without remorse, it was crazy at work"
         }
     ];

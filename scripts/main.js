@@ -1,13 +1,12 @@
-console.log(notes);
-
 function grid() {
+    const sNotes = getNotesSortedByDateTime();
     var container = document.createElement('div');
     container.id = "main";
     container.className = "container";
 
-    for (var i = 0; i < notes.length; i++) {
+    for (var i = 0; i < sNotes.length; i++) {
 
-        const note = notes[i];
+        const note = sNotes[i];
 
         // Construct (parent) row
         var row = document.createElement('div');
@@ -41,6 +40,10 @@ function grid() {
 function getPrettyDate(date) {
     var parsedDate = new Date(Date.parse(date));
     return `${parsedDate.getFullYear()}-${parsedDate.getMonth()+1}-${parsedDate.getDate()}`;
+}
+
+function getNotesSortedByDateTime() {
+    return notes.sort((a,b) => (Date.parse(a.date)) < (Date.parse(b.date)) ? 1 : -1);
 }
 
 // and you should use 
