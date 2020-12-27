@@ -5,8 +5,10 @@ button { border: none; background-color: #b0f2ac; font-family: "Courier New", Co
 .container {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
-    grid-template-rows: auto;
     gap: 3%;
+    grid-template-rows: repeat(1, auto); /* adjustment */
+    grid-gap: 8px; 
+    padding: 8px;
 }
   
 /* .container > *:nth-child(2n-1) {
@@ -35,8 +37,8 @@ button { border: none; background-color: #b0f2ac; font-family: "Courier New", Co
 }
 
 #notes-container {
-    margin: 0% 15% 5% 15%;
-    padding: 40px 0px;
+    margin: 0% 15% 0 15%;
+    padding: 2% 0px;
 }
 
 .text-saba {
