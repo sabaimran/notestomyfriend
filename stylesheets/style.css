@@ -64,3 +64,8 @@ button { border: none; background-color: #b0f2ac; font-family: "Courier New", Co
 pre {
     white-space: pre-wrap;
 }
+
+#icon {
+    width: 10%;
+    height: auto;
+}
