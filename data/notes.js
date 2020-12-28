@@ -1,16 +1,16 @@
 const notes = 
     [
-         { 
+        { 
             author: "q",
             date: "2019-12-06T09:45:00",
             text: "Feeling a bit immobile. The answer is just sleep. When life is so fucking full. This is all constructed and our energy is impossible to allocate optimized \n Kind of like holy freak \n We live on earth"
-         },
-         { 
+        },
+        { 
             author: "saba",
             date: "2014-01-12T09:45:00",
             text: "the saying of the same thing twice in different words, generally considered to be a fault of style (e.g., they arrived one after the other in succession ). \n smilar to pleonasm"
-         },
-         { 
+        },
+        { 
             author: "q",
             date: "2014-01-12T08:32:00",
             text: "what does 'tautology' mean? \n it sounds like an amazing word"
