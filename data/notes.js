@@ -12,7 +12,7 @@ const notes =
         },
         { 
             author: "q",
-            date: "2014-01-12T08:32:00",
+            date: "2014-01-12T10:32:00",
             text: "what does 'tautology' mean? \n it sounds like an amazing word"
         },
         { 
