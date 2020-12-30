@@ -48,11 +48,28 @@ function initNotes() {
         var button = document.createElement('button');
         button.className = "tag-button";
         button.innerHTML = key;
+        button.onclick = function(tag) {
+                updateFilter(tag);
+            };
 
         tagsContainer.appendChild(button);
     }
 
     document.getElementById('tag-buttons').appendChild(tagsContainer);
+}
+
+/**
+ * Given a tag, remove it from the filter if it's currently activated, or add it if it is not.
+ * @param {The tag that should be toggled} tag 
+ */
+function updateFilter(tag) {
+    console.log(tag);
+    if (whitelist.has(tag)) {
+        whitelist.delete(tag);
+    } else {
+        whitelist.add(tag);
+    }
+    renderNotes();
 }
 
 /**
@@ -143,4 +160,3 @@ function getNotesSortedByDateTime() {
 
 // Run client-side processes.
 initNotes();
-renderNotes();
