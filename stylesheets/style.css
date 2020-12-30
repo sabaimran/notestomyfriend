@@ -2,6 +2,14 @@ h1,p { margin: 2vh; font-weight:800 }
 body { background-color: #e5f1f8; font-family: "Courier New", Courier, monospace; font-weight: 600;}
 button { border: none; background-color: #b0f2ac; font-family: "Courier New", Courier, monospace; font-size: 300%; cursor: pointer; }
 
+.banner {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(20px, 1fr) );
+    gap: 3%;
+    grid-gap: 8px; 
+    padding: 8px;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
@@ -11,21 +19,6 @@ button { border: none; background-color: #b0f2ac; font-family: "Courier New", Co
     padding: 8px;
 }
   
-/* .container > *:nth-child(2n-1) {
-    justify-self: end;
-    text-align: left;
-}
-
-.container > *:nth-child(2n) {
-    justify-self: end;
-    text-align: left;
-}
-
-.container > *:nth-child(2n-1):nth-last-of-type(1) {
-    border-color: rgb(96, 109, 182);
-    grid-column: span 2;
-} */
-
 .text-saba:hover {
     background-color: rgb(132, 144, 216);
     transition: 2s;

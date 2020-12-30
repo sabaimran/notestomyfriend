@@ -4,6 +4,8 @@ function grid() {
     container.id = "main";
     container.className = "container";
 
+    var tagsMap = {};
+
     for (var i = 0; i < sNotes.length; i++) {
 
         const note = sNotes[i];
@@ -31,9 +33,20 @@ function grid() {
         date.className = "text-date";
         row.appendChild(date);
 
+        // Process tags
+        var tags = note.tag?.split(',');
+        if (tags) {
+            tags.forEach(tag => {
+                if (tag in tagsMap) 
+                {
+                    tagsMap[tag].push(i);
+                } else {
+                    tagsMap[tag] = [i];
+                }
+            });
+        }
         container.appendChild(row);
     }
-
     return container;
 }
 
