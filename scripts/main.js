@@ -56,37 +56,6 @@ function initNotes() {
 }
 
 /**
- * Render only wanted notes as visible in the notes layout after subsequent changes.
- */
-function renderNotesInvisible() {
-    var showAll = whitelist.size == 0;
-
-    // There is some non-zero set of whitelisted tags.
-    for (var i = 0; i < sNotes.length; i++) {
-        const note = sNotes[i];
-        var tags = note.tag?.split(',');
-
-        if (showAll) {
-            document.getElementById("text" + i).style.visibility = "visible";
-            continue
-        }
-
-        // Set to invisible unless we find a tag matching the filter of whitelisted tags.
-        document.getElementById("text" + i).style.visibility = "hidden";
-        if (tags) {
-            console.log(tags);
-            for (let tag of tags) {
-                console.log(whitelist.has(tag));
-                if (whitelist.has(tag)) {
-                    document.getElementById("text" + i).style.visibility = "visible";
-                    break
-                }
-            }
-        }
-    }
-}
-
-/**
  * Filter out notes whose tags are not in the whitelist; filter in notes whose tags are on the whitelist.
  */
 function renderNotes() {
