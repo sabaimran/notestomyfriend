@@ -1,10 +1,10 @@
 h1,p { margin: 2vh; font-weight:800 }
 body { background-color: #e5f1f8; font-family: "Courier New", Courier, monospace; font-weight: 600;}
-button { border: none; background-color: #b0f2ac; font-family: "Courier New", Courier, monospace; font-size: 300%; cursor: pointer; }
+button { border: none; background-color: #aea2f7; border-radius: 5%; font-family: "Courier New", Courier, monospace; font-size: 150%; cursor: pointer; }
 
-.banner {
+.tags-container {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(20px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
     gap: 3%;
     grid-gap: 8px; 
     padding: 8px;
