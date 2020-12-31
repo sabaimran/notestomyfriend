@@ -1,6 +1,6 @@
 h1,p { margin: 2vh; font-weight:800 }
 body { background-color: #e5f1f8; font-family: "Courier New", Courier, monospace; font-weight: 600;}
-button { border: none;  border-radius: 5%; font-family: "Courier New", Courier, monospace; font-size: 150%; cursor: pointer; }
+button { border: none; font-family: "Courier New", Courier, monospace; font-size: 150%; cursor: pointer; }
 
 .inactive-tag {
     background-color: #aea2f7;
@@ -8,6 +8,14 @@ button { border: none;  border-radius: 5%; font-family: "Courier New", Courier, 
 
 .active-tag {
     background-color: #f7d4a7;
+}
+
+.header-banner {
+    display: grid;
+    grid-template-columns: minmax(100px, auto) 10fr;
+    gap: 3%;
+    grid-gap: 8px; 
+    padding: 8px;
 }
 
 .tags-container {
@@ -67,6 +75,6 @@ pre {
 }
 
 #icon {
-    width: 10%;
+    width: 100%;
     height: auto;
 }

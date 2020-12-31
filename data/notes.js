@@ -3,7 +3,7 @@ const notes =
         { 
             author: "q",
             date: "2019-12-06T09:45:00",
-            text: "Feeling a bit immobile. The answer is just sleep. When life is so fucking full. This is all constructed and our energy is impossible to allocate optimized \nKind of like holy freak \n We live on earth",
+            text: "Feeling a bit immobile. The answer is just sleep. When life is so fucking full. This is all constructed and our energy is impossible to allocate optimized \nKind of like holy freak \nWe live on earth",
             tag: "angst"
         },
         { 
@@ -14,13 +14,13 @@ const notes =
         { 
             author: "q",
             date: "2014-01-12T10:32:00",
-            text: "what does 'tautology' mean? \n it sounds like an amazing word",
+            text: "what does 'tautology' mean? \nit sounds like an amazing word",
             tag: "romance"
         },
         { 
             author: "saba",
             date: "2019-12-09T00:00:00",
-            text: "Remove your ego from it. What happens happens, just make decisions that make you feel like you could look back and be proud of what you’ve done.",
+            text: "Remove your ego from it. What happens happens, just make decisions that make you feel like you could look back and be proud of what you've done.",
             tag: "self-improvement"
         },
         { 
