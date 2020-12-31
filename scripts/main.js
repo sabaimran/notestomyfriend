@@ -66,7 +66,6 @@ function initNotes() {
  * @param {The tag that should be toggled} tag 
  */
 function updateFilter(tag) {
-    console.log(tag);
     if (whitelist.has(tag)) {
         whitelist.delete(tag);
     } else {
@@ -77,7 +76,6 @@ function updateFilter(tag) {
 
 /**
  * For a given button, toggle its color.
- * @param {The id of the button element} buttonId
  * @param {The tag that should be toggled} tag
  */
 function toggleColor(key) {
