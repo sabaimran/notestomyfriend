@@ -1,6 +1,14 @@
 h1,p { margin: 2vh; font-weight:800 }
 body { background-color: #e5f1f8; font-family: "Courier New", Courier, monospace; font-weight: 600;}
-button { border: none; background-color: #aea2f7; border-radius: 5%; font-family: "Courier New", Courier, monospace; font-size: 150%; cursor: pointer; }
+button { border: none;  border-radius: 5%; font-family: "Courier New", Courier, monospace; font-size: 150%; cursor: pointer; }
+
+.inactive-tag {
+    background-color: #aea2f7;
+}
+
+.active-tag {
+    background-color: #f7d4a7;
+}
 
 .tags-container {
     display: grid;

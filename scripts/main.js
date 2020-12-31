@@ -44,13 +44,16 @@ function initNotes() {
 
     document.getElementById('notes-container').appendChild(container);
 
+    // Add buttons with callback functions.
     for (let key in tagsMap) {
         var button = document.createElement('button');
-        button.className = "tag-button";
+        button.className = "inactive-tag";
+        button.id = "tag-button-"+key;
         button.innerHTML = key;
-        button.onclick = function(tag) {
-                updateFilter(tag);
-            };
+        button.addEventListener('click', function(){
+            updateFilter(key);
+            toggleColor(key);
+        });
 
         tagsContainer.appendChild(button);
     }
@@ -73,10 +76,23 @@ function updateFilter(tag) {
 }
 
 /**
+ * For a given button, toggle its color.
+ * @param {The id of the button element} buttonId
+ * @param {The tag that should be toggled} tag
+ */
+function toggleColor(key) {
+    var button = document.getElementById("tag-button-"+key);
+    if (whitelist.has(key)) {
+        button.className = "active-tag";
+    } else {
+        button.className = "inactive-tag";
+    }
+}
+
+/**
  * Filter out notes whose tags are not in the whitelist; filter in notes whose tags are on the whitelist.
  */
 function renderNotes() {
-    whitelist.add("self-improvement");
     var showAll = whitelist.size == 0;
     var containerElement = document.getElementById("main");
     showIds = new Set();
@@ -102,6 +118,7 @@ function renderNotes() {
             }
         } else {
             if (element == null) {
+                note = sNotes[i];
                 var row = getRowElement(note, i);
                 containerElement.appendChild(row);
             }
