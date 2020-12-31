@@ -95,6 +95,10 @@ function toggleColor(key) {
 function renderNotes() {
     var showAll = whitelist.size == 0;
     var containerElement = document.getElementById("main");
+    while (containerElement.firstChild) {
+        containerElement.removeChild(containerElement.firstChild);
+    }
+
     showIds = new Set();
 
     // Get all ids for notes that are included in the tag whitelist.
@@ -108,20 +112,13 @@ function renderNotes() {
     }
 
     for (var i = 0; i < sNotes.length; i++) {
-        element = document.getElementById("text"+i);
-
         // If this element is not in our whitelist, remove it. If it is, show it.
         if (!showAll && !showIds.has(i)) {
-            const note = sNotes[i];
-            if (element !== null) {
-                element.remove();
-            }
+            continue;
         } else {
-            if (element == null) {
-                note = sNotes[i];
-                var row = getRowElement(note, i);
-                containerElement.appendChild(row);
-            }
+            note = sNotes[i];
+            var row = getRowElement(note, i);
+            containerElement.appendChild(row);
         }
     }
 }
