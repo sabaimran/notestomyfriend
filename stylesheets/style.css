@@ -35,7 +35,7 @@ button { border: none; font-family: "Courier New", Courier, monospace; font-size
     padding: 8px;
 }
   
-.text-saba:hover {
+.text-s:hover {
     background-color: rgb(132, 144, 216);
     transition: 2s;
 }
@@ -50,7 +50,7 @@ button { border: none; font-family: "Courier New", Courier, monospace; font-size
     padding: 2% 0px;
 }
 
-.text-saba {
+.text-sasba {
     background-color: #b0f2ac;
     transition: background-color 2s;
 }
